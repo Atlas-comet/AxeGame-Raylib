@@ -26,8 +26,8 @@ int main(){
     float BAxe{UAxe+AxeLength};
 
     // Direction
-    float AxeDirection{1};
-    float CircleDirection{1};
+    float AxeDirection{2};
+    float CircleDirection{2};
 
     // Collision test
     bool Collision = (LAxe <= RCircle)&&
@@ -43,7 +43,7 @@ int main(){
         ClearBackground(GRAY);
         // Main Game logic
         if (Collision){
-            DrawText("Game over",Width/2,Height/2,20,RED);
+            DrawText("Game over",Width/2-50,Height/2-50,50,RED);
         }
         else{
             // update the collision test
